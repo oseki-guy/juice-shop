@@ -18,4 +18,4 @@ jobs:
           docker_name: 'ghcr.io/oseki-guy/zaproxy:report-sarif'
           target: 'https://preview.owasp-juice.shop'
           rules_file_name: '.zap/rules.tsv'
-          cmd_options: '-a -j -S'
+          cmd_options: '-a -j -S report_sarif.sarif'
