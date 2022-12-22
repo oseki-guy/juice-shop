@@ -18,7 +18,7 @@ jobs:
           docker_name: 'ghcr.io/oseki-guy/zaproxy:report-sarif'
           target: 'https://preview.owasp-juice.shop'
           rules_file_name: '.zap/rules.tsv'
-          cmd_options: '-d -a -j --auto -autogenconf /home/zap/zap.yaml'
+          cmd_options: '-d -a -j --auto --autogenconf /home/zap/zap.yaml'
       - uses: actions/upload-artifact@v3
         with:
           path: /home/zap/zap.yaml
