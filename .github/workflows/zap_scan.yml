@@ -19,3 +19,6 @@ jobs:
           target: 'https://preview.owasp-juice.shop'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-d -a -j --auto'
+      - uses: actions/upload-artifact@v3
+        with:
+          path: /home/zap/zap.yaml
